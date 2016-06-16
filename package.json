@@ -1,0 +1,32 @@
+{
+  "name": "vdom-nesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o build.js -t [ babelify ]",
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-stage-0": "^6.5.0",
+    "dateformat": "^1.0.12",
+    "flyd": "^0.2.2",
+    "pubsub-js": "^1.5.3",
+    "ramda": "^0.21.0",
+    "snabbdom": "^0.5.0",
+    "union-type": "^0.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
